@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
-from get_moments import dcf_delay_bound
-from tdma_reward import tdma_delay_bound
+from dcf_delay import dcf_delay_bound
+from tdma_delay import tdma_delay_bound
 
 # maximum transmission try
 k = 6
