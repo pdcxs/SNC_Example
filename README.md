@@ -107,7 +107,6 @@ print(zip([x * sigma for x in xs], tdma))
 
 ![](http://latex.codecogs.com/svg.latex?M_\Delta^2=M_C^2+M_{B+I}^2+2M_C^1M_{B+I}^1)
 
-
 ### 3. Bound
 
 ![](http://latex.codecogs.com/svg.latex?p\{\delta>x\}\leq\inf\left[\frac{M_\Delta^1}{x-t_s},\frac{M_\Delta^2}{(x-t_s)^2}\right])
@@ -143,9 +142,9 @@ print(zip([x * sigma for x in xs], tdma))
 
 由网络演算时延上界结论：
 
-![](http://latex.codecogs.com/svg.latex?P\{D(t)>h(\alpha +x,\beta)\}\leq%20f\otimes%20g(x))
+![](http://latex.codecogs.com/svg.latex?P\{D(t)>h(\alpha+x,\beta)\}\leq%20f\otimes%20g(x))
 
-其中![](http://latex.codecogs.com/svg.latex?h(\alpha,\beta)=\sup_{s\geq 0}\{\inf\{\tau\geq0:\alpha(s)\leq\beta(s+\tau)\}\})
+其中![](http://latex.codecogs.com/svg.latex?h(\alpha,\beta)=\sup_{s\geq%200}\{\inf\{\tau\geq0:\alpha(s)\leq\beta(s+\tau)\}\})
 
 经一系列推导可得：
 
