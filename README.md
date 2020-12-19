@@ -148,10 +148,10 @@ print(zip([x * sigma for x in xs], tdma))
 
 经一系列推导可得：
 
-![](https://latex.codecogs.com/svg.latex?P\{D(t)%3E\frac{x}{r}+T\}\leq\inf_{0\leq%20y\leq%20x}\left[\sum_{k=\lceil%20y+\lambda%20t\rceil}^\infty\left\{\frac{e^{-\lambda%20t}[\lambda%20t]^k}{k!}\right\}\right])
+![](https://latex.codecogs.com/svg.latex?P\left[D(t)%3E\frac{x}{r}+T\right]\leq\inf_{0\leq%20y\leq%20x}\left[\sum_{k=\lceil%20y+\lambda%20t\rceil}^\infty\left(\frac{e^{-\lambda%20t}[\lambda%20t]^k}{k!}\right)\right])
 
 令![](https://latex.codecogs.com/svg.latex?D=\frac{x}{r}+T),则有：
 
-![](https://latex.codecogs.com/svg.latex?P\{D(t)%3ED\}\leq\inf_{0\leq%20y\leq%20r(D-T)}\left[\sum_{k=\lceil%20y+\lambda%20t\rceil}^\infty\left\{\frac{e^{-\lambda%20t}[\lambda%20t]^k}{k!}\right\}\right])
+![](https://latex.codecogs.com/svg.latex?P\left[D(t)%3ED\right]\leq\inf_{0\leq%20y\leq%20r(D-T)}\left[\sum_{k=\lceil%20y+\lambda%20t\rceil}^\infty\left(\frac{e^{-\lambda%20t}[\lambda%20t]^k}{k!}\right)\right])
 
 将y取最大值，右式求和达最小值，即![](https://latex.codecogs.com/svg.latex?y=r(D-T)^+)
