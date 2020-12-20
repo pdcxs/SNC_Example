@@ -109,7 +109,7 @@ print(zip([x * sigma for x in xs], tdma))
 
 ### 3. Bound
 
-![](https://latex.codecogs.com/svg.latex?p\{\delta>x\}\leq\inf\left[\frac{M_\Delta^1}{x-t_s},\frac{M_\Delta^2}{(x-t_s)^2}\right])
+![](https://latex.codecogs.com/svg.latex?p\(\delta>x\)\leq\inf\left[\frac{M_\Delta^1}{x-t_s},\frac{M_\Delta^2}{(x-t_s)^2}\right])
 
 该Bound是针对单个报文的服务时间，没有考虑排队时延，对于单个报文，服务时间和时延等价，即![](http://latex.codecogs.com/svg.latex?\delta(n)=D(n)),不等式右端则为delay-bound，由这一不等式便可画出delay_bound曲线图
 
