@@ -38,7 +38,7 @@ def tdma_delay_bound(arrival_rate, link_rate, portion, max_packet_length):
         for i in range(len(link_rate) - 1):
             delay_T += max_packet_length / (link_rate[i] * portion[i])
 
-        r = min([(i+1) * (j+1) for i, j in zip(link_rate, portion)])      
+        r = min([i * j for i, j in zip(link_rate, portion)])      
         if x > delay_T:
             y = r * (x - delay_T)
             for i in range(0, math.ceil(y + arrival_rate * t) - 1):
