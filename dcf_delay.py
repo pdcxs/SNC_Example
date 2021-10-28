@@ -45,7 +45,7 @@ def get_X_first_moment(n, pc, sigma, ts, tc):
     return: M_X1
     """
     p_suc = get_success_prob(n, get_trans_prob(n, pc))
-    return (1 - pc) * sigma + p_suc * (ts - tc) + pc * tc
+    return ((1 - pc) + p_suc * (ts - tc) + pc * tc) * sigma
 
 def get_X_second_moment(n, pc, sigma, ts, tc):
     """
@@ -59,9 +59,9 @@ def get_X_second_moment(n, pc, sigma, ts, tc):
     return: M_X2
     """
     p_suc = get_success_prob(n, get_trans_prob(n, pc))
-    return (1 - pc) * sigma * sigma + \
-        p_suc * (ts * ts - tc * tc) + \
-        pc * tc * tc
+    return ((1 - pc) + 
+        p_suc * (ts * ts - tc * tc) + 
+        pc * tc * tc) * sigma * sigma
 
 def get_BI_first_moment(n, pc, k, m, cw, sigma, ts, tc):
     """

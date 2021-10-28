@@ -15,9 +15,9 @@ ts = 256
 # channel busy slot number because of collision
 tc = 5
 
-sigma = 0.0001 # slot duration (unit: second)
+sigma = 0.01 # slot duration (unit: second)
 
-xs = range(2000, 19000, 1000)
+xs = range(300, 1000, 50)
 p1 = [dcf_delay_bound(x, n, k, m, cw, ts, tc, sigma) for x in xs]
 # p2 = [service_bound2(x, n, k, m, cw, ts, tc, sigma) for x in xs]
 
