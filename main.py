@@ -11,13 +11,13 @@ cw = 32
 # number of nodes in the same communication range
 n = 10
 # channel busy slot number because of success send
-ts = 256
+ts = 50
 # channel busy slot number because of collision
 tc = 5
 
 sigma = 0.01 # slot duration (unit: second)
 
-xs = range(300, 1000, 50)
+xs = range(60, 300, 10)
 p1 = [dcf_delay_bound(x, n, k, m, cw, ts, tc, sigma) for x in xs]
 # p2 = [service_bound2(x, n, k, m, cw, ts, tc, sigma) for x in xs]
 
